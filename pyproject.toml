@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-intelligence"
+version = "1.0.0"
+description = "Automated Document Intelligence System - PDF text extraction, classification, entity extraction, and similarity analysis"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mani", email = "myfamily9006@gmail.com"},
+]
+keywords = [
+    "document-processing",
+    "pdf-extraction",
+    "entity-extraction",
+    "document-classification",
+    "text-similarity",
+    "tfidf",
+    "cosine-similarity",
+    "nlp",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: General",
+    "Topic :: Office/Business",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "PyPDF2>=3.0.0",
+    "pdfplumber>=0.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+docintel = "src.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/docintel/doc-intelligence"
+Repository = "https://github.com/docintel/doc-intelligence"
+Issues = "https://github.com/docintel/doc-intelligence/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "tests*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"

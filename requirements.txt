@@ -1,0 +1,21 @@
+# Automated Document Intelligence System
+# Core dependencies
+
+# PDF text extraction
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+
+# Data processing
+numpy>=1.24.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Linting and code quality
+flake8>=6.0.0
+black>=23.0.0
+mypy>=1.5.0
+
+# Type stubs
+types-PyYAML>=6.0.0

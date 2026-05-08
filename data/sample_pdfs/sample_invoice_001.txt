@@ -1,0 +1,43 @@
+INVOICE
+
+Invoice Number: INV-2024-001
+Invoice Date: January 15, 2024
+Due Date: February 15, 2024
+
+Bill To:
+Acme Corporation
+123 Business Street
+New York, NY 10001
+Attn: John Smith
+Email: john.smith@acmecorp.com
+Phone: (555) 123-4567
+
+Ship To:
+Acme Corporation Warehouse
+456 Industrial Blvd
+Newark, NJ 07101
+
+Purchase Order: PO-8921
+
+Item Description          Quantity    Unit Price    Amount
+Consulting Services         10         $150.00    $1,500.00
+Software License             5         $299.00    $1,495.00
+Support Package              1       $1,200.00    $1,200.00
+Training Session             2         $450.00      $900.00
+
+Subtotal:                                          $5,095.00
+Tax (8.5%):                                          $433.08
+Discount (-5%):                                     -$254.75
+Grand Total:                                        $5,273.33
+
+Payment Terms: Net 30
+Payment Method: Bank Transfer
+
+Please remit payment within 30 days. Late payments subject to 1.5% monthly service charge.
+
+Thank you for your business.
+
+Sincerely,
+Mary Williams
+Accounts Receivable
+vendor@techsolutions.com
