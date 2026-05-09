@@ -353,6 +353,20 @@ Contributions are welcome! Please ensure:
 
 <!-- showcase:start -->
 
+## Research Report
+
+**Structured Information Extraction from Heterogeneous PDF Documents**
+
+_A pipeline study combining layout-aware parsing, named-entity recognition, and rule-based pattern matching_
+
+A self-contained research-grade report (Abstract, Introduction, Research Problem, Research Questions, Literature Review, Research Method, Data Description, Analysis, Discussion, Conclusion, Future Work, References) is published with this repository.
+
+[Read the full report (PDF)](docs/research_report.pdf)
+
+**Keywords:** document AI, named-entity recognition, layout analysis, PDF processing, information extraction
+
+![Research metrics](docs/research_metrics.png)
+
 ## Architecture
 
 ```mermaid
