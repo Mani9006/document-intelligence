@@ -348,3 +348,39 @@ Contributions are welcome! Please ensure:
 - **Project**: Automated Document Intelligence System
 - **Version**: 1.0.0
 - **License**: MIT
+
+---
+
+<!-- showcase:start -->
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[PDF Input] --> B[PyPDF2 Extractor]
+    B --> C[Layout Detector]
+    C --> D[spaCy Pipeline]
+    D --> E1[Entity Extractor]
+    D --> E2[Regex Patterns]
+    E1 & E2 --> F[Confidence Scoring]
+    F --> G[Structured Output]
+```
+
+## Test Results
+
+![Test results](docs/test_results.png)
+
+**119 passing**, **0 failing**, **1 skipped** (total 120, framework: pytest)
+
+## References & Further Reading
+
+- Honnibal & Montani (2017). *spaCy: Industrial-Strength Natural Language Processing in Python.* [↗](https://spacy.io/)
+- Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to Information Retrieval.* Cambridge University Press. [↗](https://nlp.stanford.edu/IR-book/)
+
+## Author
+
+**Manikanta Reddy Mandadhi** — Senior Data Scientist (RAG / Agentic AI)
+
+GitHub: [@Mani9006](https://github.com/Mani9006/document-intelligence) · LinkedIn: [reddy1999](https://www.linkedin.com/in/reddy1999) · Portfolio: [manikantabio.com](https://www.manikantabio.com)
+
+<!-- showcase:end -->

@@ -1,0 +1,8 @@
+flowchart LR
+    A[PDF Input] --> B[PyPDF2 Extractor]
+    B --> C[Layout Detector]
+    C --> D[spaCy Pipeline]
+    D --> E1[Entity Extractor]
+    D --> E2[Regex Patterns]
+    E1 & E2 --> F[Confidence Scoring]
+    F --> G[Structured Output]
